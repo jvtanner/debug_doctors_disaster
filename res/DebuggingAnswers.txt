@@ -1,0 +1,32 @@
+Put the answers to the debugging questions from Problem One in this file.
+
+Q1: "finish" - 'C', "numDisks" - 5, "start" - 'A', "temp" - 'B', "totalMoves" - 28672
+
+
+
+Q2: The file was defined in src>Demos>towersOfHanoiGUI. The function name is makeTheMagicHappen
+
+
+
+Q3: totalMoves holds value of 31
+
+
+
+Q4: 15
+
+
+
+Q5:two characters
+
+
+
+Q6:line 41: chosen += ch instead of chosen + ch
+
+
+
+Q7:Essentially, ch would hold the first character in a word and continue into a recursive step.
+    This is fine when we're going down one possible permutation, such as return "hi" from an
+    original input of "hi". However, when the for-loop continues from "h" to "i" as the start of
+    another possible permutation, "chosen" is still storing that original "h", so instead of
+    outputting "ih" as the last possible permutation, it can't get rid of that "h" and returns
+    "hih" as a result.
